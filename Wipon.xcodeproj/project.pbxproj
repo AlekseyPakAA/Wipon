@@ -11,6 +11,8 @@
 		43BC0015214CFE9700BBAFB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0014214CFE9700BBAFB8 /* Assets.xcassets */; };
 		43BC0018214CFE9700BBAFB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0016214CFE9700BBAFB8 /* LaunchScreen.storyboard */; };
 		43BC0045214D013100BBAFB8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0044214D013100BBAFB8 /* .swiftlint.yml */; };
+		43BC0081214D192200BBAFB8 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC0080214D192200BBAFB8 /* ScannerViewController.swift */; };
+		43BC0083214D205600BBAFB8 /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0082214D205600BBAFB8 /* Scanner.storyboard */; };
 		E638102B2A504E23EF4D76BF /* Pods_Wipon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		43BC0019214CFE9700BBAFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43BC0024214D002A00BBAFB8 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
 		43BC0044214D013100BBAFB8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		43BC0080214D192200BBAFB8 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		43BC0082214D205600BBAFB8 /* Scanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
 		4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wipon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		740F4717C87E791F0B3EF8B7 /* Pods-Wipon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wipon/Pods-Wipon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +104,7 @@
 		43BC0021214CFF8500BBAFB8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				43BC007F214D190900BBAFB8 /* Scanner */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -148,6 +153,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		43BC007F214D190900BBAFB8 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				43BC0080214D192200BBAFB8 /* ScannerViewController.swift */,
+				43BC0082214D205600BBAFB8 /* Scanner.storyboard */,
+			);
+			path = Scanner;
 			sourceTree = "<group>";
 		};
 		ECA713BC99E9ACEAD4044550 /* Pods */ = {
@@ -223,6 +237,7 @@
 				43BC0045214D013100BBAFB8 /* .swiftlint.yml in Resources */,
 				43BC0018214CFE9700BBAFB8 /* LaunchScreen.storyboard in Resources */,
 				43BC0015214CFE9700BBAFB8 /* Assets.xcassets in Resources */,
+				43BC0083214D205600BBAFB8 /* Scanner.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43BC000E214CFE9600BBAFB8 /* AppDelegate.swift in Sources */,
+				43BC0081214D192200BBAFB8 /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

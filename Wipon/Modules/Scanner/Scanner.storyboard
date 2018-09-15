@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TSg-OO-KKc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanner View Controller-->
+        <scene sceneID="l4Z-ZV-cA2">
+            <objects>
+                <viewController id="TSg-OO-KKc" customClass="ScannerViewController" customModule="Wipon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O0i-Dp-pP4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwg-y0-G8m">
+                                <rect key="frame" x="16" y="635" width="343" height="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qwg-y0-G8m" firstAttribute="centerX" secondItem="O0i-Dp-pP4" secondAttribute="centerX" id="2Sp-GQ-okz"/>
+                            <constraint firstAttribute="trailing" secondItem="qwg-y0-G8m" secondAttribute="trailing" constant="16" id="Dsc-xP-S0p"/>
+                            <constraint firstItem="qwg-y0-G8m" firstAttribute="leading" secondItem="O0i-Dp-pP4" secondAttribute="leading" constant="16" id="Prw-xp-Qyq"/>
+                            <constraint firstItem="Mi1-B8-4Q0" firstAttribute="bottom" secondItem="qwg-y0-G8m" secondAttribute="bottom" constant="16" id="hUq-il-kZp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mi1-B8-4Q0"/>
+                    </view>
+                    <connections>
+                        <outlet property="barCodeContentLabel" destination="qwg-y0-G8m" id="tFE-BM-A6D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Un4-ne-fCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="216"/>
+        </scene>
+    </scenes>
+</document>
