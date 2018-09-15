@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		43BC000E214CFE9600BBAFB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC000D214CFE9600BBAFB8 /* AppDelegate.swift */; };
-		43BC0010214CFE9600BBAFB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC000F214CFE9600BBAFB8 /* ViewController.swift */; };
-		43BC0013214CFE9600BBAFB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0011214CFE9600BBAFB8 /* Main.storyboard */; };
 		43BC0015214CFE9700BBAFB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0014214CFE9700BBAFB8 /* Assets.xcassets */; };
 		43BC0018214CFE9700BBAFB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0016214CFE9700BBAFB8 /* LaunchScreen.storyboard */; };
+		43BC0045214D013100BBAFB8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0044214D013100BBAFB8 /* .swiftlint.yml */; };
+		E638102B2A504E23EF4D76BF /* Pods_Wipon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04697C738B904A519466ED85 /* Pods-Wipon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wipon/Pods-Wipon.debug.xcconfig"; sourceTree = "<group>"; };
 		43BC000A214CFE9600BBAFB8 /* Wipon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wipon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BC000D214CFE9600BBAFB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43BC000F214CFE9600BBAFB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		43BC0012214CFE9600BBAFB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43BC0014214CFE9700BBAFB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BC0017214CFE9700BBAFB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43BC0019214CFE9700BBAFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43BC0024214D002A00BBAFB8 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
+		43BC0044214D013100BBAFB8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wipon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		740F4717C87E791F0B3EF8B7 /* Pods-Wipon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wipon/Pods-Wipon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +32,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E638102B2A504E23EF4D76BF /* Pods_Wipon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25AEAB47C01C13485D406F8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43BC0001214CFE9600BBAFB8 = {
 			isa = PBXGroup;
 			children = (
+				43BC0044214D013100BBAFB8 /* .swiftlint.yml */,
 				43BC000C214CFE9600BBAFB8 /* Wipon */,
 				43BC000B214CFE9600BBAFB8 /* Products */,
+				ECA713BC99E9ACEAD4044550 /* Pods */,
+				25AEAB47C01C13485D406F8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,94 @@
 		43BC000C214CFE9600BBAFB8 /* Wipon */ = {
 			isa = PBXGroup;
 			children = (
-				43BC000D214CFE9600BBAFB8 /* AppDelegate.swift */,
-				43BC000F214CFE9600BBAFB8 /* ViewController.swift */,
-				43BC0011214CFE9600BBAFB8 /* Main.storyboard */,
-				43BC0014214CFE9700BBAFB8 /* Assets.xcassets */,
-				43BC0016214CFE9700BBAFB8 /* LaunchScreen.storyboard */,
-				43BC0019214CFE9700BBAFB8 /* Info.plist */,
+				43BC001F214CFF6200BBAFB8 /* Application */,
+				43BC0020214CFF7200BBAFB8 /* Common */,
+				43BC0021214CFF8500BBAFB8 /* Modules */,
+				43BC0022214CFFA000BBAFB8 /* Businesslogic */,
+				43BC0023214CFFAF00BBAFB8 /* Resources */,
 			);
 			path = Wipon;
+			sourceTree = "<group>";
+		};
+		43BC001F214CFF6200BBAFB8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				43BC000D214CFE9600BBAFB8 /* AppDelegate.swift */,
+				43BC0024214D002A00BBAFB8 /* Objective-CBridgingHeader.h */,
+				43BC0019214CFE9700BBAFB8 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		43BC0020214CFF7200BBAFB8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				43BC0025214D009700BBAFB8 /* Extensions */,
+				43BC0029214D009700BBAFB8 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		43BC0021214CFF8500BBAFB8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		43BC0022214CFFA000BBAFB8 /* Businesslogic */ = {
+			isa = PBXGroup;
+			children = (
+				43BC0039214D00CE00BBAFB8 /* Model */,
+				43BC0035214D00CE00BBAFB8 /* Services */,
+			);
+			path = Businesslogic;
+			sourceTree = "<group>";
+		};
+		43BC0023214CFFAF00BBAFB8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43BC0014214CFE9700BBAFB8 /* Assets.xcassets */,
+				43BC0016214CFE9700BBAFB8 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		43BC0025214D009700BBAFB8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		43BC0029214D009700BBAFB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43BC0035214D00CE00BBAFB8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		43BC0039214D00CE00BBAFB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECA713BC99E9ACEAD4044550 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04697C738B904A519466ED85 /* Pods-Wipon.debug.xcconfig */,
+				740F4717C87E791F0B3EF8B7 /* Pods-Wipon.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43BC001C214CFE9700BBAFB8 /* Build configuration list for PBXNativeTarget "Wipon" */;
 			buildPhases = (
+				90D40D0CC5E883ECF96A5207 /* [CP] Check Pods Manifest.lock */,
 				43BC0006214CFE9600BBAFB8 /* Sources */,
 				43BC0007214CFE9600BBAFB8 /* Frameworks */,
 				43BC0008214CFE9600BBAFB8 /* Resources */,
+				85A0697DF2D861910D3234E5 /* [CP] Embed Pods Frameworks */,
+				12B04657F41BD59C9DA58E23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,20 +220,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BC0045214D013100BBAFB8 /* .swiftlint.yml in Resources */,
 				43BC0018214CFE9700BBAFB8 /* LaunchScreen.storyboard in Resources */,
 				43BC0015214CFE9700BBAFB8 /* Assets.xcassets in Resources */,
-				43BC0013214CFE9600BBAFB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12B04657F41BD59C9DA58E23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wipon/Pods-Wipon-resources.sh",
+				"${PODS_ROOT}/PPpdf417/MicroBlink.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MicroBlink.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wipon/Pods-Wipon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85A0697DF2D861910D3234E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wipon/Pods-Wipon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/RSBarcodes_Swift/RSBarcodes_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSBarcodes_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wipon/Pods-Wipon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90D40D0CC5E883ECF96A5207 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wipon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43BC0006214CFE9600BBAFB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43BC0010214CFE9600BBAFB8 /* ViewController.swift in Sources */,
 				43BC000E214CFE9600BBAFB8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +299,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		43BC0011214CFE9600BBAFB8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43BC0012214CFE9600BBAFB8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		43BC0016214CFE9700BBAFB8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,17 +426,19 @@
 		};
 		43BC001D214CFE9700BBAFB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04697C738B904A519466ED85 /* Pods-Wipon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J74552PZ47;
-				INFOPLIST_FILE = Wipon/Info.plist;
+				INFOPLIST_FILE = Wipon/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = alexey.pak.Wipon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wipon/Application/Objective-CBridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,17 +446,19 @@
 		};
 		43BC001E214CFE9700BBAFB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 740F4717C87E791F0B3EF8B7 /* Pods-Wipon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J74552PZ47;
-				INFOPLIST_FILE = Wipon/Info.plist;
+				INFOPLIST_FILE = Wipon/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = alexey.pak.Wipon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wipon/Application/Objective-CBridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

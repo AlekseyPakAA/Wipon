@@ -1,0 +1,18 @@
+PODS:
+  - Kingfisher (4.9.0)
+  - RSBarcodes_Swift (4.0.0)
+  - SwiftLint (0.27.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - RSBarcodes_Swift
+  - SwiftLint
+
+SPEC CHECKSUMS:
+  Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
+  RSBarcodes_Swift: b3e9801f448f50439f77ce7d0aeeb7aa4e9ebb19
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+
+PODFILE CHECKSUM: e53db941f87007dcc782be182afa131e696766b8
+
+COCOAPODS: 1.4.0
