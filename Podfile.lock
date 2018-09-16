@@ -1,18 +1,26 @@
 PODS:
   - Kingfisher (4.9.0)
+  - PhoneNumberKit (2.1.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 2.1.0)
+    - PhoneNumberKit/UIKit (= 2.1.0)
+  - PhoneNumberKit/PhoneNumberKitCore (2.1.0)
+  - PhoneNumberKit/UIKit (2.1.0):
+    - PhoneNumberKit/PhoneNumberKitCore
   - RSBarcodes_Swift (4.0.0)
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
   - Kingfisher
+  - PhoneNumberKit (~> 2.1)
   - RSBarcodes_Swift
   - SwiftLint
 
 SPEC CHECKSUMS:
   Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
+  PhoneNumberKit: 62003f40ff75315fd3738286558bc365365ac222
   RSBarcodes_Swift: b3e9801f448f50439f77ce7d0aeeb7aa4e9ebb19
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: e53db941f87007dcc782be182afa131e696766b8
+PODFILE CHECKSUM: 34e442c0400e0d71b910c2d936e461ae065ab5fa
 
 COCOAPODS: 1.4.0

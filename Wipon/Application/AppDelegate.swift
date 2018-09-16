@@ -19,8 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		let window = UIWindow()
 
-		let rootViewController = UIViewController()
-		rootViewController.view.backgroundColor = .lightGray
+		let rootViewController = UIStoryboard(name: "Authorization", bundle: nil).instantiateInitialViewController()
 		window.rootViewController = rootViewController
 
 		window.makeKeyAndVisible()

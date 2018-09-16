@@ -10,6 +10,7 @@ target 'Wipon' do
 	pod 'Kingfisher'
 
 	pod 'RSBarcodes_Swift'
-	# Pods for Wipon
+
+	pod 'PhoneNumberKit'
 
 end
