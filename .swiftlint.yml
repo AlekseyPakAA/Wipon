@@ -3,9 +3,6 @@ disabled_rules:
 included:
   - Wipon
 
-excluded:
-  - Wipon/Common/MWBarcodeScanner
-
 line_length:
   - 160 #warning
   - 200 #error
