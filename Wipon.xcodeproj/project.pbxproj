@@ -14,6 +14,9 @@
 		43BC0015214CFE9700BBAFB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0014214CFE9700BBAFB8 /* Assets.xcassets */; };
 		43BC0018214CFE9700BBAFB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0016214CFE9700BBAFB8 /* LaunchScreen.storyboard */; };
 		43BC0045214D013100BBAFB8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0044214D013100BBAFB8 /* .swiftlint.yml */; };
+		43D81A5A21579B5C0099375C /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5921579B5C0099375C /* AuthorizationService.swift */; };
+		43D81A5D21579C460099375C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5C21579C460099375C /* Result.swift */; };
+		43D81A602157C25A0099375C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5F2157C25A0099375C /* Constants.swift */; };
 		E638102B2A504E23EF4D76BF /* Pods_Wipon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		43BC0019214CFE9700BBAFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43BC0024214D002A00BBAFB8 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
 		43BC0044214D013100BBAFB8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		43D81A5921579B5C0099375C /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		43D81A5C21579C460099375C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		43D81A5F2157C25A0099375C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wipon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		740F4717C87E791F0B3EF8B7 /* Pods-Wipon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wipon/Pods-Wipon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +120,7 @@
 		43BC0020214CFF7200BBAFB8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				43D81A5E2157C2440099375C /* Constants */,
 				43A94D99214E317800740C40 /* Alamofire */,
 				43BC0025214D009700BBAFB8 /* Extensions */,
 				43BC0029214D009700BBAFB8 /* Views */,
@@ -164,6 +171,8 @@
 		43BC0035214D00CE00BBAFB8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				43D81A5B21579B7D0099375C /* Common */,
+				43D81A5921579B5C0099375C /* AuthorizationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -173,6 +182,22 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		43D81A5B21579B7D0099375C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				43D81A5C21579C460099375C /* Result.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		43D81A5E2157C2440099375C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				43D81A5F2157C25A0099375C /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		ECA713BC99E9ACEAD4044550 /* Pods */ = {
@@ -196,7 +221,6 @@
 				43BC0007214CFE9600BBAFB8 /* Frameworks */,
 				43BC0008214CFE9600BBAFB8 /* Resources */,
 				85A0697DF2D861910D3234E5 /* [CP] Embed Pods Frameworks */,
-				12B04657F41BD59C9DA58E23 /* [CP] Copy Pods Resources */,
 				43D2A02C214E7FA700722AD2 /* Swiftlint */,
 			);
 			buildRules = (
@@ -256,24 +280,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12B04657F41BD59C9DA58E23 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Wipon/Pods-Wipon-resources.sh",
-				"${PODS_ROOT}/PPpdf417/MicroBlink.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MicroBlink.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wipon/Pods-Wipon-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		43D2A02C214E7FA700722AD2 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,7 +292,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint";
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		85A0697DF2D861910D3234E5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -341,9 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D81A5D21579C460099375C /* Result.swift in Sources */,
 				437706BC214D3913009B95C5 /* AuthorizationViewController.swift in Sources */,
 				43A94D9B214E318F00740C40 /* Router.swift in Sources */,
 				43BC000E214CFE9600BBAFB8 /* AppDelegate.swift in Sources */,
+				43D81A5A21579B5C0099375C /* AuthorizationService.swift in Sources */,
+				43D81A602157C25A0099375C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
