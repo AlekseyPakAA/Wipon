@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+// swiftlint:disable all
+public let WiponErrorDomain = "alexey.pak.Error"
+// swiftlint:enable all
