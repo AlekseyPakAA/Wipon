@@ -19,9 +19,9 @@ protocol AuthorizationView: class {
 
 }
 
-class AuthorizationViewController: UIViewController {
+class PhoneNumberViewController: UIViewController {
 
-	fileprivate let presenter = AuthorizationPresenter()
+	fileprivate let presenter = PhoneNumberPresenter()
 
 	@IBOutlet weak var phoneNumberTextField: PhoneNumberTextField! {
 		didSet {
@@ -56,7 +56,7 @@ class AuthorizationViewController: UIViewController {
 }
 
 // MARK: AuthorizationView
-extension AuthorizationViewController: AuthorizationView {
+extension PhoneNumberViewController: AuthorizationView {
 
 	func hideMessage() {
 		messageLabel.isHidden = true
@@ -78,7 +78,7 @@ extension AuthorizationViewController: AuthorizationView {
 }
 
 // MARK: UITextFieldDelegate
-extension AuthorizationViewController: UITextFieldDelegate {
+extension PhoneNumberViewController: UITextFieldDelegate {
 
 	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
 				   replacementString string: String) -> Bool {

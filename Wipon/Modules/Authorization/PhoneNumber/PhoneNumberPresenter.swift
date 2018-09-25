@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class AuthorizationPresenter {
+class PhoneNumberPresenter {
 
 	weak var view: AuthorizationView?
 
