@@ -17,6 +17,8 @@
 		43D81A5A21579B5C0099375C /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5921579B5C0099375C /* AuthorizationService.swift */; };
 		43D81A5D21579C460099375C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5C21579C460099375C /* Result.swift */; };
 		43D81A602157C25A0099375C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5F2157C25A0099375C /* Constants.swift */; };
+		43D81A622158121A0099375C /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A612158121A0099375C /* AuthorizationPresenter.swift */; };
+		43FA7679215ACB690076BDAF /* PhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FA7678215ACB690076BDAF /* PhoneNumberTextField.swift */; };
 		E638102B2A504E23EF4D76BF /* Pods_Wipon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		43D81A5921579B5C0099375C /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
 		43D81A5C21579C460099375C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		43D81A5F2157C25A0099375C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		43D81A612158121A0099375C /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		43FA7678215ACB690076BDAF /* PhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextField.swift; sourceTree = "<group>"; };
 		4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wipon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		740F4717C87E791F0B3EF8B7 /* Pods-Wipon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wipon/Pods-Wipon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +68,7 @@
 			children = (
 				437706B9214D3057009B95C5 /* Authorization.storyboard */,
 				437706BB214D3913009B95C5 /* AuthorizationViewController.swift */,
+				43D81A612158121A0099375C /* AuthorizationPresenter.swift */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 		43BC0025214D009700BBAFB8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				43FA7678215ACB690076BDAF /* PhoneNumberTextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -348,6 +354,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				43D81A5D21579C460099375C /* Result.swift in Sources */,
+				43FA7679215ACB690076BDAF /* PhoneNumberTextField.swift in Sources */,
+				43D81A622158121A0099375C /* AuthorizationPresenter.swift in Sources */,
 				437706BC214D3913009B95C5 /* AuthorizationViewController.swift in Sources */,
 				43A94D9B214E318F00740C40 /* Router.swift in Sources */,
 				43BC000E214CFE9600BBAFB8 /* AppDelegate.swift in Sources */,

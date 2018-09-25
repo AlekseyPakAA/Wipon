@@ -22,6 +22,16 @@ DEPENDENCIES:
   - RSBarcodes_Swift
   - SwiftLint
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - Kingfisher
+    - ObjectMapper
+    - PhoneNumberKit
+    - RSBarcodes_Swift
+    - SwiftLint
+
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
@@ -33,4 +43,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 75ae0bb996d76ed0560a5ff0504c3641aac94665
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

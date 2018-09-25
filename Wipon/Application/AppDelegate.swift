@@ -26,24 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		self.window = window
 
-		Alamofire.request(Router.code(phone: "+79895066096")).responseString { response in
-			switch response.result {
-			case .success(let data):
-				print("success: \(data)")
-			case .failure(let error):
-				print("failure: \(error.localizedDescription)")
-			}
-		}
-
-//		Alamofire.request(Router.auth(phone: "+79895066096", code: "368619")).validate().responseString { response in
-//			switch response.result {
-//			case .success(let data):
-//				print("success: \(data)")
-//			case .failure(let error):
-//				print("failure: \(error.localizedDescription)")
-//			}
-//		}
-
 		return true
 	}
 
