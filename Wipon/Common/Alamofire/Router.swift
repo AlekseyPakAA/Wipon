@@ -10,35 +10,35 @@ import Foundation
 import Alamofire
 
 enum Router: URLRequestConvertible {
-	case code(phone: String)
-	case auth(phone: String, code: String)
+    case code(phone: String)
+    case auth(phone: String, code: String)
 
-	static let baseURL = URL(string: "http://dev.wipon.net:8187/v1")!
+    static let baseURL = URL(string: "http://dev.wipon.net:8187/v1")!
 
-	var method: HTTPMethod {
-		switch self {
-		case .code:
-			return .post
-		case .auth:
-			return .post
-		}
-	}
+    var method: HTTPMethod {
+        switch self {
+        case .code:
+            return .post
+        case .auth:
+            return .post
+        }
+    }
 
-	func asURLRequest() throws -> URLRequest {
-		let result: (path: String, parameters: Parameters) = {
-			switch self {
-			case .code(let phone):
-				return ("/auth", ["phone_number": phone])
-			case .auth(let phone, let code):
-				return ("/auth", ["phone_number": phone, "auth_code": code])
-			}
-		}()
+    func asURLRequest() throws -> URLRequest {
+        let result: (path: String, parameters: Parameters) = {
+            switch self {
+            case .code(let phone):
+                return ("/auth", ["phone_number": phone])
+            case .auth(let phone, let code):
+                return ("/auth", ["phone_number": phone, "auth_code": code])
+            }
+        }()
 
-		var urlRequest = URLRequest(url: Router.baseURL.appendingPathComponent(result.path))
+        var urlRequest = URLRequest(url: Router.baseURL.appendingPathComponent(result.path))
 
-		urlRequest.httpMethod = method.rawValue
-		urlRequest.setValue("application/json", forHTTPHeaderField: "Accept")
+        urlRequest.httpMethod = method.rawValue
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Accept")
 
-		return try URLEncoding.httpBody.encode(urlRequest, with: result.parameters)
-	}
+        return try URLEncoding.httpBody.encode(urlRequest, with: result.parameters)
+    }
 }

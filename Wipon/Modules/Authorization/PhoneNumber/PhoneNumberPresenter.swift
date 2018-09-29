@@ -9,28 +9,35 @@
 import Foundation
 class PhoneNumberPresenter {
 
-	weak var view: AuthorizationView?
+    weak var view: AuthorizationView?
+    var router: PhoneNumberRouter
 
-	func requestAuthorizationCode(phoneNumber: String) {
-		view?.showActivityIndicator()
-		view?.hideMessage()
+    var phoneNumber: String = ""
 
-		AuthorizationService.shared.code(phone: phoneNumber) {[weak self] result in
-			guard let `self` = self else {
-				return
-			}
+    init(router: PhoneNumberRouter) {
+        self.router = router
+    }
 
-			switch result {
-			case .success:
-				break
-			case .timeLimitation:
-				self.view?.showMessage("Can't send authentication code.")
-			case .failure(let error):
-				self.view?.showMessage("Whoops. Something went wrong. \(error.localizedDescription)")
-			}
+    func requestAuthorizationCode() {
+        view?.showActivityIndicator()
+        view?.hideMessage()
 
-			self.view?.hideActivityIndicator()
-		}
-	}
+        AuthorizationService.shared.code(phone: phoneNumber) {[weak self] result in
+            guard let `self` = self else {
+                return
+            }
+
+            switch result {
+            case .success:
+                self.router.showCodeModule(phoneNumber: self.phoneNumber)
+            case .timeLimitation:
+                self.view?.showMessage("Can't send authentication code.")
+            case .failure(let error):
+                self.view?.showMessage("Whoops. Something went wrong. \(error.localizedDescription)")
+            }
+
+            self.view?.hideActivityIndicator()
+        }
+    }
 
 }

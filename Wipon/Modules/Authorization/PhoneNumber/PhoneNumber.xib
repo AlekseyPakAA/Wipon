@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneNumberViewController" customModule="Wipon" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="p8Z-OM-QvI" id="mtR-9K-vUs"/>
+                <outlet property="messageLabel" destination="TL8-ws-n9r" id="E94-Jz-69q"/>
+                <outlet property="phoneNumberTextField" destination="xDy-oO-Zbq" id="ChW-ba-1tq"/>
+                <outlet property="signInButton" destination="Ljw-7O-vAL" id="w7E-kx-910"/>
+                <outlet property="view" destination="cQx-Z6-4lw" id="6rw-mp-RS3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cQx-Z6-4lw">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0I-RW-4RT">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGT-HV-2Vs">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cqp-dx-UlO">
+                                    <rect key="frame" x="114" y="296" width="186" height="72"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+7 918 545 34 44" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xDy-oO-Zbq" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
+                                            <rect key="frame" x="0.0" y="0.0" width="186" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="186" id="znb-2x-NPZ"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                            <connections>
+                                                <action selector="didChangePhoneNumberTextFieldWithSender:" destination="-1" eventType="editingChanged" id="U86-hk-ko3"/>
+                                            </connections>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljw-7O-vAL">
+                                            <rect key="frame" x="63" y="36" width="60" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <state key="normal" title="Sign In"/>
+                                            <connections>
+                                                <action selector="didTouchSignInButtonWithSender:" destination="-1" eventType="touchUpInside" id="1Zh-5d-dZT"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="xDy-oO-Zbq" secondAttribute="trailing" id="62n-it-M3q"/>
+                                        <constraint firstItem="xDy-oO-Zbq" firstAttribute="leading" secondItem="cqp-dx-UlO" secondAttribute="leading" id="feo-WN-TeX"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SU6-XX-cWE">
+                                    <rect key="frame" x="114" y="384" width="186" height="37"/>
+                                    <subviews>
+                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="p8Z-OM-QvI">
+                                            <rect key="frame" x="0.0" y="0.0" width="186" height="37"/>
+                                            <color key="color" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </activityIndicatorView>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL8-ws-n9r">
+                                            <rect key="frame" x="0.0" y="0.0" width="186" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="186" id="vKF-y6-43V"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="cqp-dx-UlO" firstAttribute="bottom" secondItem="NGT-HV-2Vs" secondAttribute="centerY" id="7om-Uk-XbG"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xDy-oO-Zbq" secondAttribute="trailing" constant="16" id="DL9-TW-kj3"/>
+                                <constraint firstItem="SU6-XX-cWE" firstAttribute="centerX" secondItem="cqp-dx-UlO" secondAttribute="centerX" id="G9x-1A-pNx"/>
+                                <constraint firstItem="xDy-oO-Zbq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NGT-HV-2Vs" secondAttribute="leading" constant="16" id="mHV-xb-GM6"/>
+                                <constraint firstItem="cqp-dx-UlO" firstAttribute="centerX" secondItem="NGT-HV-2Vs" secondAttribute="centerX" id="q5c-We-hja"/>
+                                <constraint firstItem="SU6-XX-cWE" firstAttribute="top" secondItem="cqp-dx-UlO" secondAttribute="bottom" constant="16" id="wcW-oX-9VB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NGT-HV-2Vs" secondAttribute="trailing" id="1fY-ew-9W6"/>
+                        <constraint firstAttribute="bottom" secondItem="NGT-HV-2Vs" secondAttribute="bottom" id="9t6-j3-tIe"/>
+                        <constraint firstItem="NGT-HV-2Vs" firstAttribute="leading" secondItem="W0I-RW-4RT" secondAttribute="leading" id="Qap-gh-sBt"/>
+                        <constraint firstItem="NGT-HV-2Vs" firstAttribute="top" secondItem="W0I-RW-4RT" secondAttribute="top" id="uqT-Lg-C0n"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NGT-HV-2Vs" firstAttribute="width" secondItem="cQx-Z6-4lw" secondAttribute="width" id="3RT-VN-Dua"/>
+                <constraint firstAttribute="bottom" secondItem="W0I-RW-4RT" secondAttribute="bottom" id="UAi-Pe-GCK"/>
+                <constraint firstItem="NGT-HV-2Vs" firstAttribute="height" secondItem="cQx-Z6-4lw" secondAttribute="height" id="cLg-kn-fJA"/>
+                <constraint firstAttribute="trailing" secondItem="W0I-RW-4RT" secondAttribute="trailing" id="cyk-Q1-sCp"/>
+                <constraint firstItem="W0I-RW-4RT" firstAttribute="top" secondItem="cQx-Z6-4lw" secondAttribute="top" id="rew-6r-c0b"/>
+                <constraint firstItem="W0I-RW-4RT" firstAttribute="leading" secondItem="cQx-Z6-4lw" secondAttribute="leading" id="rsU-Li-mXY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="W5i-Qb-74b"/>
+            <point key="canvasLocation" x="311" y="-108"/>
+        </view>
+    </objects>
+</document>
