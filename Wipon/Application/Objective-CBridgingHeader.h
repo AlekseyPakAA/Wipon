@@ -9,6 +9,7 @@
 #ifndef Objective_CBridgingHeader_h
 #define Objective_CBridgingHeader_h
 
+// CocoaPods (check your library path)
 
 #endif /* Objective_CBridgingHeader_h */
 

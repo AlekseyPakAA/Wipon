@@ -7,15 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43699DFD215FD223005DE5D1 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43699DFC215FD223005DE5D1 /* UserDefaultsManager.swift */; };
+		43699E00215FDFA1005DE5D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43699DFF215FDFA1005DE5D1 /* ViewController.swift */; };
+		436A578A215D657700B4D8D9 /* PhoneNumberAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A5789215D657700B4D8D9 /* PhoneNumberAssembly.swift */; };
+		436A578C215D658900B4D8D9 /* PhoneNumberRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A578B215D658900B4D8D9 /* PhoneNumberRouter.swift */; };
+		436A578E215D65A100B4D8D9 /* CodeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A578D215D65A100B4D8D9 /* CodeAssembly.swift */; };
+		436A5790215D65AC00B4D8D9 /* CodeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A578F215D65AC00B4D8D9 /* CodeRouter.swift */; };
+		436A5793215D662B00B4D8D9 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A5792215D662B00B4D8D9 /* BaseRouter.swift */; };
+		436A5795215D6DA400B4D8D9 /* Code.xib in Resources */ = {isa = PBXBuildFile; fileRef = 436A5794215D6DA400B4D8D9 /* Code.xib */; };
+		436A5797215D6DCC00B4D8D9 /* PhoneNumber.xib in Resources */ = {isa = PBXBuildFile; fileRef = 436A5796215D6DCC00B4D8D9 /* PhoneNumber.xib */; };
+		437706BC214D3913009B95C5 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437706BB214D3913009B95C5 /* PhoneNumberViewController.swift */; };
+		43A94D9B214E318F00740C40 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A94D9A214E318F00740C40 /* Router.swift */; };
 		43BC000E214CFE9600BBAFB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC000D214CFE9600BBAFB8 /* AppDelegate.swift */; };
 		43BC0015214CFE9700BBAFB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0014214CFE9700BBAFB8 /* Assets.xcassets */; };
 		43BC0018214CFE9700BBAFB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0016214CFE9700BBAFB8 /* LaunchScreen.storyboard */; };
 		43BC0045214D013100BBAFB8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0044214D013100BBAFB8 /* .swiftlint.yml */; };
+		43D81A5A21579B5C0099375C /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5921579B5C0099375C /* AuthorizationService.swift */; };
+		43D81A5D21579C460099375C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5C21579C460099375C /* Result.swift */; };
+		43D81A602157C25A0099375C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5F2157C25A0099375C /* Constants.swift */; };
+		43D81A622158121A0099375C /* PhoneNumberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A612158121A0099375C /* PhoneNumberPresenter.swift */; };
+		43FA7679215ACB690076BDAF /* PhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FA7678215ACB690076BDAF /* PhoneNumberTextField.swift */; };
+		43FA767D215AD7AA0076BDAF /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FA767C215AD7AA0076BDAF /* CodeViewController.swift */; };
+		43FA767F215AD7BB0076BDAF /* CodePresener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FA767E215AD7BB0076BDAF /* CodePresener.swift */; };
 		E638102B2A504E23EF4D76BF /* Pods_Wipon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04697C738B904A519466ED85 /* Pods-Wipon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wipon/Pods-Wipon.debug.xcconfig"; sourceTree = "<group>"; };
+		43699DFC215FD223005DE5D1 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		43699DFF215FDFA1005DE5D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		436A5789215D657700B4D8D9 /* PhoneNumberAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberAssembly.swift; sourceTree = "<group>"; };
+		436A578B215D658900B4D8D9 /* PhoneNumberRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberRouter.swift; sourceTree = "<group>"; };
+		436A578D215D65A100B4D8D9 /* CodeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAssembly.swift; sourceTree = "<group>"; };
+		436A578F215D65AC00B4D8D9 /* CodeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRouter.swift; sourceTree = "<group>"; };
+		436A5792215D662B00B4D8D9 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		436A5794215D6DA400B4D8D9 /* Code.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Code.xib; sourceTree = "<group>"; };
+		436A5796215D6DCC00B4D8D9 /* PhoneNumber.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneNumber.xib; sourceTree = "<group>"; };
+		437706BB214D3913009B95C5 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+		43A94D9A214E318F00740C40 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		43BC000A214CFE9600BBAFB8 /* Wipon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wipon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BC000D214CFE9600BBAFB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43BC0014214CFE9700BBAFB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -23,6 +52,13 @@
 		43BC0019214CFE9700BBAFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43BC0024214D002A00BBAFB8 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
 		43BC0044214D013100BBAFB8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		43D81A5921579B5C0099375C /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		43D81A5C21579C460099375C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		43D81A5F2157C25A0099375C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		43D81A612158121A0099375C /* PhoneNumberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberPresenter.swift; sourceTree = "<group>"; };
+		43FA7678215ACB690076BDAF /* PhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextField.swift; sourceTree = "<group>"; };
+		43FA767C215AD7AA0076BDAF /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		43FA767E215AD7BB0076BDAF /* CodePresener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePresener.swift; sourceTree = "<group>"; };
 		4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wipon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		740F4717C87E791F0B3EF8B7 /* Pods-Wipon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wipon/Pods-Wipon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,6 +81,47 @@
 				4C2C001D890CA184459B0EF4 /* Pods_Wipon.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43699DFB215FD06B005DE5D1 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				43699DFC215FD223005DE5D1 /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		43699DFE215FDF84005DE5D1 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				436A5792215D662B00B4D8D9 /* BaseRouter.swift */,
+				43699DFF215FDFA1005DE5D1 /* ViewController.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		436A5791215D660600B4D8D9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		437706B8214D3018009B95C5 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				43FA767B215AD5BF0076BDAF /* Code */,
+				43FA767A215AD3AF0076BDAF /* PhoneNumber */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		43A94D99214E317800740C40 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				43A94D9A214E318F00740C40 /* Router.swift */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		43BC0001214CFE9600BBAFB8 = {
@@ -91,6 +168,11 @@
 		43BC0020214CFF7200BBAFB8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				43699DFE215FDF84005DE5D1 /* BaseClasses */,
+				43699DFB215FD06B005DE5D1 /* UserDefaults */,
+				436A5791215D660600B4D8D9 /* Protocols */,
+				43D81A5E2157C2440099375C /* Constants */,
+				43A94D99214E317800740C40 /* Alamofire */,
 				43BC0025214D009700BBAFB8 /* Extensions */,
 				43BC0029214D009700BBAFB8 /* Views */,
 			);
@@ -100,6 +182,7 @@
 		43BC0021214CFF8500BBAFB8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				437706B8214D3018009B95C5 /* Authorization */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -125,6 +208,7 @@
 		43BC0025214D009700BBAFB8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				43FA7678215ACB690076BDAF /* PhoneNumberTextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -139,6 +223,8 @@
 		43BC0035214D00CE00BBAFB8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				43D81A5B21579B7D0099375C /* Common */,
+				43D81A5921579B5C0099375C /* AuthorizationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -148,6 +234,46 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		43D81A5B21579B7D0099375C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				43D81A5C21579C460099375C /* Result.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		43D81A5E2157C2440099375C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				43D81A5F2157C25A0099375C /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		43FA767A215AD3AF0076BDAF /* PhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				436A5796215D6DCC00B4D8D9 /* PhoneNumber.xib */,
+				437706BB214D3913009B95C5 /* PhoneNumberViewController.swift */,
+				43D81A612158121A0099375C /* PhoneNumberPresenter.swift */,
+				436A5789215D657700B4D8D9 /* PhoneNumberAssembly.swift */,
+				436A578B215D658900B4D8D9 /* PhoneNumberRouter.swift */,
+			);
+			path = PhoneNumber;
+			sourceTree = "<group>";
+		};
+		43FA767B215AD5BF0076BDAF /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				436A5794215D6DA400B4D8D9 /* Code.xib */,
+				43FA767C215AD7AA0076BDAF /* CodeViewController.swift */,
+				43FA767E215AD7BB0076BDAF /* CodePresener.swift */,
+				436A578D215D65A100B4D8D9 /* CodeAssembly.swift */,
+				436A578F215D65AC00B4D8D9 /* CodeRouter.swift */,
+			);
+			path = Code;
 			sourceTree = "<group>";
 		};
 		ECA713BC99E9ACEAD4044550 /* Pods */ = {
@@ -171,7 +297,7 @@
 				43BC0007214CFE9600BBAFB8 /* Frameworks */,
 				43BC0008214CFE9600BBAFB8 /* Resources */,
 				85A0697DF2D861910D3234E5 /* [CP] Embed Pods Frameworks */,
-				12B04657F41BD59C9DA58E23 /* [CP] Copy Pods Resources */,
+				43D2A02C214E7FA700722AD2 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -220,6 +346,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436A5797215D6DCC00B4D8D9 /* PhoneNumber.xib in Resources */,
+				436A5795215D6DA400B4D8D9 /* Code.xib in Resources */,
 				43BC0045214D013100BBAFB8 /* .swiftlint.yml in Resources */,
 				43BC0018214CFE9700BBAFB8 /* LaunchScreen.storyboard in Resources */,
 				43BC0015214CFE9700BBAFB8 /* Assets.xcassets in Resources */,
@@ -229,23 +357,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12B04657F41BD59C9DA58E23 /* [CP] Copy Pods Resources */ = {
+		43D2A02C214E7FA700722AD2 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Wipon/Pods-Wipon-resources.sh",
-				"${PODS_ROOT}/PPpdf417/MicroBlink.bundle",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = Swiftlint;
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MicroBlink.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wipon/Pods-Wipon-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		85A0697DF2D861910D3234E5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -254,12 +378,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Wipon/Pods-Wipon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RSBarcodes_Swift/RSBarcodes_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSBarcodes_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +424,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D81A5D21579C460099375C /* Result.swift in Sources */,
+				43FA7679215ACB690076BDAF /* PhoneNumberTextField.swift in Sources */,
+				43D81A622158121A0099375C /* PhoneNumberPresenter.swift in Sources */,
+				437706BC214D3913009B95C5 /* PhoneNumberViewController.swift in Sources */,
+				43A94D9B214E318F00740C40 /* Router.swift in Sources */,
+				436A578A215D657700B4D8D9 /* PhoneNumberAssembly.swift in Sources */,
+				43699DFD215FD223005DE5D1 /* UserDefaultsManager.swift in Sources */,
+				436A578E215D65A100B4D8D9 /* CodeAssembly.swift in Sources */,
+				436A5793215D662B00B4D8D9 /* BaseRouter.swift in Sources */,
+				43699E00215FDFA1005DE5D1 /* ViewController.swift in Sources */,
 				43BC000E214CFE9600BBAFB8 /* AppDelegate.swift in Sources */,
+				43FA767F215AD7BB0076BDAF /* CodePresener.swift in Sources */,
+				43FA767D215AD7AA0076BDAF /* CodeViewController.swift in Sources */,
+				43D81A5A21579B5C0099375C /* AuthorizationService.swift in Sources */,
+				436A5790215D65AC00B4D8D9 /* CodeRouter.swift in Sources */,
+				436A578C215D658900B4D8D9 /* PhoneNumberRouter.swift in Sources */,
+				43D81A602157C25A0099375C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

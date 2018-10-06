@@ -1,18 +1,46 @@
 PODS:
+  - Alamofire (4.7.3)
+  - AlamofireObjectMapper (5.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.3)
   - Kingfisher (4.9.0)
+  - ObjectMapper (3.3.0)
+  - PhoneNumberKit (2.1.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 2.1.0)
+    - PhoneNumberKit/UIKit (= 2.1.0)
+  - PhoneNumberKit/PhoneNumberKitCore (2.1.0)
+  - PhoneNumberKit/UIKit (2.1.0):
+    - PhoneNumberKit/PhoneNumberKitCore
   - RSBarcodes_Swift (4.0.0)
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper (~> 5.0)
   - Kingfisher
+  - PhoneNumberKit
   - RSBarcodes_Swift
   - SwiftLint
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - Kingfisher
+    - ObjectMapper
+    - PhoneNumberKit
+    - RSBarcodes_Swift
+    - SwiftLint
+
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
   Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  PhoneNumberKit: 62003f40ff75315fd3738286558bc365365ac222
   RSBarcodes_Swift: b3e9801f448f50439f77ce7d0aeeb7aa4e9ebb19
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: e53db941f87007dcc782be182afa131e696766b8
+PODFILE CHECKSUM: 75ae0bb996d76ed0560a5ff0504c3641aac94665
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
