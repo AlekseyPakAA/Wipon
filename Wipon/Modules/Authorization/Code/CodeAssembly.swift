@@ -16,7 +16,6 @@ class CodeAssembly {
         let controller = CodeViewController(presenter: presenter)
 
         presenter.view = controller
-        presenter.router = router
 
         return controller
     }

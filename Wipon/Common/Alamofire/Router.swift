@@ -12,6 +12,7 @@ import Alamofire
 enum Router: URLRequestConvertible {
     case code(phone: String)
     case auth(phone: String, code: String)
+    case checks(type: String, code: String)
 
     static let baseURL = URL(string: "http://dev.wipon.net:8187/v1")!
 
@@ -20,6 +21,8 @@ enum Router: URLRequestConvertible {
         case .code:
             return .post
         case .auth:
+            return .post
+        case .checks:
             return .post
         }
     }
@@ -31,6 +34,8 @@ enum Router: URLRequestConvertible {
                 return ("/auth", ["phone_number": phone])
             case .auth(let phone, let code):
                 return ("/auth", ["phone_number": phone, "auth_code": code])
+            case .checks(let type, let code):
+                return ("/checks/subless", ["type": type, "code": code])
             }
         }()
 

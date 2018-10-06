@@ -16,7 +16,6 @@ class PhoneNumberAssembly {
         let controller = PhoneNumberViewController(presenter: presenter)
 
         presenter.view = controller
-        presenter.router = router
 
         return controller
     }

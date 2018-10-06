@@ -10,7 +10,7 @@ import Foundation
 class PhoneNumberPresenter {
 
     weak var view: AuthorizationView?
-    var router: PhoneNumberRouter
+    fileprivate let router: PhoneNumberRouter
 
     var phoneNumber: String = ""
 

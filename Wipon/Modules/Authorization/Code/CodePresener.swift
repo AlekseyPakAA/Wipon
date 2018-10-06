@@ -11,12 +11,12 @@ import Foundation
 class CodePresenter {
 
     weak var view: CodeView?
-    var router: CodeRouter
+    fileprivate let router: CodeRouter
 
     let phoneNumber: String
     var code: String = ""
 
-    init( router: CodeRouter, phoneNumber: String) {
+    init(router: CodeRouter, phoneNumber: String) {
         self.router = router
         self.phoneNumber = phoneNumber
     }

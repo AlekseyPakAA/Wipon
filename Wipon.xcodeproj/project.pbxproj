@@ -22,6 +22,12 @@
 		43BC0015214CFE9700BBAFB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0014214CFE9700BBAFB8 /* Assets.xcassets */; };
 		43BC0018214CFE9700BBAFB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0016214CFE9700BBAFB8 /* LaunchScreen.storyboard */; };
 		43BC0045214D013100BBAFB8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 43BC0044214D013100BBAFB8 /* .swiftlint.yml */; };
+		43BC0081214D192200BBAFB8 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC0080214D192200BBAFB8 /* ScannerViewController.swift */; };
+		43C8D48D2168F83F00ED5D07 /* ScannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D48C2168F83F00ED5D07 /* ScannerPresenter.swift */; };
+		43C8D48F2168F85900ED5D07 /* ScannerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D48E2168F85900ED5D07 /* ScannerAssembly.swift */; };
+		43C8D4912168F87000ED5D07 /* ScannerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D4902168F87000ED5D07 /* ScannerRouter.swift */; };
+		43C8D4932168F8C400ED5D07 /* Scanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C8D4922168F8C400ED5D07 /* Scanner.xib */; };
+		43C8D495216902F500ED5D07 /* ChecksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D494216902F500ED5D07 /* ChecksService.swift */; };
 		43D81A5A21579B5C0099375C /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5921579B5C0099375C /* AuthorizationService.swift */; };
 		43D81A5D21579C460099375C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5C21579C460099375C /* Result.swift */; };
 		43D81A602157C25A0099375C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5F2157C25A0099375C /* Constants.swift */; };
@@ -52,6 +58,12 @@
 		43BC0019214CFE9700BBAFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43BC0024214D002A00BBAFB8 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
 		43BC0044214D013100BBAFB8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		43BC0080214D192200BBAFB8 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		43C8D48C2168F83F00ED5D07 /* ScannerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerPresenter.swift; sourceTree = "<group>"; };
+		43C8D48E2168F85900ED5D07 /* ScannerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerAssembly.swift; sourceTree = "<group>"; };
+		43C8D4902168F87000ED5D07 /* ScannerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerRouter.swift; sourceTree = "<group>"; };
+		43C8D4922168F8C400ED5D07 /* Scanner.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Scanner.xib; sourceTree = "<group>"; };
+		43C8D494216902F500ED5D07 /* ChecksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecksService.swift; sourceTree = "<group>"; };
 		43D81A5921579B5C0099375C /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
 		43D81A5C21579C460099375C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		43D81A5F2157C25A0099375C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -182,6 +194,7 @@
 		43BC0021214CFF8500BBAFB8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				43BC007F214D190900BBAFB8 /* Scanner */,
 				437706B8214D3018009B95C5 /* Authorization */,
 			);
 			path = Modules;
@@ -225,6 +238,7 @@
 			children = (
 				43D81A5B21579B7D0099375C /* Common */,
 				43D81A5921579B5C0099375C /* AuthorizationService.swift */,
+				43C8D494216902F500ED5D07 /* ChecksService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -234,6 +248,18 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		43BC007F214D190900BBAFB8 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				43C8D4922168F8C400ED5D07 /* Scanner.xib */,
+				43BC0080214D192200BBAFB8 /* ScannerViewController.swift */,
+				43C8D48C2168F83F00ED5D07 /* ScannerPresenter.swift */,
+				43C8D48E2168F85900ED5D07 /* ScannerAssembly.swift */,
+				43C8D4902168F87000ED5D07 /* ScannerRouter.swift */,
+			);
+			path = Scanner;
 			sourceTree = "<group>";
 		};
 		43D81A5B21579B7D0099375C /* Common */ = {
@@ -351,6 +377,7 @@
 				43BC0045214D013100BBAFB8 /* .swiftlint.yml in Resources */,
 				43BC0018214CFE9700BBAFB8 /* LaunchScreen.storyboard in Resources */,
 				43BC0015214CFE9700BBAFB8 /* Assets.xcassets in Resources */,
+				43C8D4932168F8C400ED5D07 /* Scanner.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +453,7 @@
 			files = (
 				43D81A5D21579C460099375C /* Result.swift in Sources */,
 				43FA7679215ACB690076BDAF /* PhoneNumberTextField.swift in Sources */,
+				43C8D48F2168F85900ED5D07 /* ScannerAssembly.swift in Sources */,
 				43D81A622158121A0099375C /* PhoneNumberPresenter.swift in Sources */,
 				437706BC214D3913009B95C5 /* PhoneNumberViewController.swift in Sources */,
 				43A94D9B214E318F00740C40 /* Router.swift in Sources */,
@@ -433,9 +461,13 @@
 				43699DFD215FD223005DE5D1 /* UserDefaultsManager.swift in Sources */,
 				436A578E215D65A100B4D8D9 /* CodeAssembly.swift in Sources */,
 				436A5793215D662B00B4D8D9 /* BaseRouter.swift in Sources */,
+				43C8D495216902F500ED5D07 /* ChecksService.swift in Sources */,
+				43C8D48D2168F83F00ED5D07 /* ScannerPresenter.swift in Sources */,
 				43699E00215FDFA1005DE5D1 /* ViewController.swift in Sources */,
 				43BC000E214CFE9600BBAFB8 /* AppDelegate.swift in Sources */,
+				43BC0081214D192200BBAFB8 /* ScannerViewController.swift in Sources */,
 				43FA767F215AD7BB0076BDAF /* CodePresener.swift in Sources */,
+				43C8D4912168F87000ED5D07 /* ScannerRouter.swift in Sources */,
 				43FA767D215AD7AA0076BDAF /* CodeViewController.swift in Sources */,
 				43D81A5A21579B5C0099375C /* AuthorizationService.swift in Sources */,
 				436A5790215D65AC00B4D8D9 /* CodeRouter.swift in Sources */,
