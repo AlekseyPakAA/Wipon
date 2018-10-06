@@ -19,10 +19,11 @@ protocol AuthorizationView: class {
 
 }
 
-class PhoneNumberViewController: UIViewController {
+class PhoneNumberViewController: ViewController {
 
     fileprivate let presenter: PhoneNumberPresenter
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var phoneNumberTextField: PhoneNumberTextField! {
         didSet {
             phoneNumberTextField.defaultRegion = Locale(identifier: "en_RU").regionCode!
@@ -47,9 +48,18 @@ class PhoneNumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        signInButton.isEnabled = phoneNumberTextField.isValidNumber
+        setup()
 
         presenter.view = self
+    }
+
+    override func willShowKeybaord(frame: CGRect, duration: TimeInterval) {
+        let offset = frame.size.height / 2
+        self.scrollView.contentInset.top = -offset
+    }
+
+    override func willHideKeybaord(frame: CGRect, duration: TimeInterval) {
+        self.scrollView.contentInset.top = 0.0
     }
 
     @IBAction func didChangePhoneNumberTextField(sender: PhoneNumberTextField) {
@@ -60,7 +70,24 @@ class PhoneNumberViewController: UIViewController {
     @IBAction func didTouchSignInButton(sender: UIButton) {
         if phoneNumberTextField.isValidNumber {
             presenter.requestAuthorizationCode()
+            view.endEditing(true)
         }
+    }
+
+    @objc func didTouchView(recognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+
+}
+
+// MARK: Private
+fileprivate extension PhoneNumberViewController {
+
+    func setup() {
+        signInButton.isEnabled = phoneNumberTextField.isValidNumber
+
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(didTouchView(recognizer:)))
+        view.addGestureRecognizer(recognizer)
     }
 
 }

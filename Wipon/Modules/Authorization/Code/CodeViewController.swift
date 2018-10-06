@@ -20,16 +20,16 @@ protocol CodeView: class {
 
 }
 
-class CodeViewController: UIViewController {
+class CodeViewController: ViewController {
 
     fileprivate let presenter: CodePresenter
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var codeTextField: UITextField! {
         didSet {
             codeTextField.delegate = self
         }
     }
-
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var submitButton: UIButton!
@@ -49,7 +49,18 @@ class CodeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setup()
+
         presenter.view = self
+    }
+
+    override func willShowKeybaord(frame: CGRect, duration: TimeInterval) {
+        let offset = frame.size.height / 2
+        self.scrollView.contentInset.top = -offset
+    }
+
+    override func willHideKeybaord(frame: CGRect, duration: TimeInterval) {
+        self.scrollView.contentInset.top = 0.0
     }
 
     @IBAction func didChangeCodeTextField(sender: UITextField) {
@@ -59,6 +70,23 @@ class CodeViewController: UIViewController {
 
     @IBAction func didTouchSubmitButton(sender: UIButton) {
         presenter.requestAuthorizationToken()
+        view.endEditing(true)
+    }
+
+    @objc func didTouchView(recognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+
+}
+
+// MARK: Private
+fileprivate extension CodeViewController {
+
+    func setup() {
+        submitButton.isEnabled = codeTextField.text?.count == codeLength
+
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(didTouchView(recognizer:)))
+        view.addGestureRecognizer(recognizer)
     }
 
 }

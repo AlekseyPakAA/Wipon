@@ -15,6 +15,7 @@
                 <outlet property="activityIndicator" destination="p8Z-OM-QvI" id="mtR-9K-vUs"/>
                 <outlet property="messageLabel" destination="TL8-ws-n9r" id="E94-Jz-69q"/>
                 <outlet property="phoneNumberTextField" destination="xDy-oO-Zbq" id="ChW-ba-1tq"/>
+                <outlet property="scrollView" destination="W0I-RW-4RT" id="XIL-aZ-xVX"/>
                 <outlet property="signInButton" destination="Ljw-7O-vAL" id="w7E-kx-910"/>
                 <outlet property="view" destination="cQx-Z6-4lw" id="6rw-mp-RS3"/>
             </connections>
@@ -24,14 +25,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0I-RW-4RT">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0I-RW-4RT">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGT-HV-2Vs">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                             <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jH-Q4-Inp">
+                                    <rect key="frame" x="121.66666666666667" y="274.66666666666669" width="170.66666666666663" height="31.333333333333314"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cqp-dx-UlO">
-                                    <rect key="frame" x="114" y="296" width="186" height="72"/>
+                                    <rect key="frame" x="114" y="322" width="186" height="72"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+7 918 545 34 44" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xDy-oO-Zbq" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
                                             <rect key="frame" x="0.0" y="0.0" width="186" height="24"/>
@@ -60,7 +67,7 @@
                                     </constraints>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SU6-XX-cWE">
-                                    <rect key="frame" x="114" y="384" width="186" height="37"/>
+                                    <rect key="frame" x="114" y="410" width="186" height="37"/>
                                     <subviews>
                                         <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="p8Z-OM-QvI">
                                             <rect key="frame" x="0.0" y="0.0" width="186" height="37"/>
@@ -79,9 +86,11 @@
                                 </stackView>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="cqp-dx-UlO" firstAttribute="bottom" secondItem="NGT-HV-2Vs" secondAttribute="centerY" id="7om-Uk-XbG"/>
+                                <constraint firstItem="cqp-dx-UlO" firstAttribute="centerY" secondItem="NGT-HV-2Vs" secondAttribute="centerY" id="7om-Uk-XbG"/>
                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xDy-oO-Zbq" secondAttribute="trailing" constant="16" id="DL9-TW-kj3"/>
                                 <constraint firstItem="SU6-XX-cWE" firstAttribute="centerX" secondItem="cqp-dx-UlO" secondAttribute="centerX" id="G9x-1A-pNx"/>
+                                <constraint firstItem="cqp-dx-UlO" firstAttribute="top" secondItem="0jH-Q4-Inp" secondAttribute="bottom" constant="16" id="SWS-Bn-roK"/>
+                                <constraint firstItem="0jH-Q4-Inp" firstAttribute="centerX" secondItem="NGT-HV-2Vs" secondAttribute="centerX" id="Wbo-eL-c0l"/>
                                 <constraint firstItem="xDy-oO-Zbq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NGT-HV-2Vs" secondAttribute="leading" constant="16" id="mHV-xb-GM6"/>
                                 <constraint firstItem="cqp-dx-UlO" firstAttribute="centerX" secondItem="NGT-HV-2Vs" secondAttribute="centerX" id="q5c-We-hja"/>
                                 <constraint firstItem="SU6-XX-cWE" firstAttribute="top" secondItem="cqp-dx-UlO" secondAttribute="bottom" constant="16" id="wcW-oX-9VB"/>
@@ -98,12 +107,12 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="NGT-HV-2Vs" firstAttribute="width" secondItem="cQx-Z6-4lw" secondAttribute="width" id="3RT-VN-Dua"/>
+                <constraint firstItem="NGT-HV-2Vs" firstAttribute="width" secondItem="W5i-Qb-74b" secondAttribute="width" id="NI1-iX-1fK"/>
                 <constraint firstAttribute="bottom" secondItem="W0I-RW-4RT" secondAttribute="bottom" id="UAi-Pe-GCK"/>
-                <constraint firstItem="NGT-HV-2Vs" firstAttribute="height" secondItem="cQx-Z6-4lw" secondAttribute="height" id="cLg-kn-fJA"/>
                 <constraint firstAttribute="trailing" secondItem="W0I-RW-4RT" secondAttribute="trailing" id="cyk-Q1-sCp"/>
                 <constraint firstItem="W0I-RW-4RT" firstAttribute="top" secondItem="cQx-Z6-4lw" secondAttribute="top" id="rew-6r-c0b"/>
                 <constraint firstItem="W0I-RW-4RT" firstAttribute="leading" secondItem="cQx-Z6-4lw" secondAttribute="leading" id="rsU-Li-mXY"/>
+                <constraint firstItem="NGT-HV-2Vs" firstAttribute="height" secondItem="W5i-Qb-74b" secondAttribute="height" id="sbS-0p-NZk"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="W5i-Qb-74b"/>
             <point key="canvasLocation" x="311" y="-108"/>
