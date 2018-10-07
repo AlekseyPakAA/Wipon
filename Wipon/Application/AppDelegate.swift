@@ -33,3 +33,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
+
+// MARK: - Routing
+extension AppDelegate {
+
+    func showScanner() {
+        guard let window = window else {
+            return
+        }
+
+        let navigationController = UINavigationController()
+        let controller = ScannerAssembly.makeModule(using: navigationController)
+        navigationController.setViewControllers([controller], animated: true)
+
+        window.rootViewController = navigationController
+        UIView.transition(with: window, duration: 0.25, options: .transitionCrossDissolve, animations: nil, completion: nil)
+    }
+
+}

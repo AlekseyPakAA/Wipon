@@ -31,6 +31,8 @@ class ScannerViewController: RSCodeReaderViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationController?.isNavigationBarHidden = true
+
         self.focusMarkLayer.strokeColor = UIColor.red.cgColor
         self.cornersLayer.strokeColor = UIColor.yellow.cgColor
     }

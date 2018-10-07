@@ -27,7 +27,10 @@
 		43C8D48F2168F85900ED5D07 /* ScannerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D48E2168F85900ED5D07 /* ScannerAssembly.swift */; };
 		43C8D4912168F87000ED5D07 /* ScannerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D4902168F87000ED5D07 /* ScannerRouter.swift */; };
 		43C8D4932168F8C400ED5D07 /* Scanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C8D4922168F8C400ED5D07 /* Scanner.xib */; };
-		43C8D495216902F500ED5D07 /* ChecksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D494216902F500ED5D07 /* ChecksService.swift */; };
+		43C8D495216902F500ED5D07 /* CheckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D494216902F500ED5D07 /* CheckService.swift */; };
+		43C8D4982169192200ED5D07 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D4972169192200ED5D07 /* NetworkUtils.swift */; };
+		43C8D49A21691CC900ED5D07 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D49921691CC900ED5D07 /* Check.swift */; };
+		43C8D49C21691CEC00ED5D07 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8D49B21691CEC00ED5D07 /* Product.swift */; };
 		43D81A5A21579B5C0099375C /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5921579B5C0099375C /* AuthorizationService.swift */; };
 		43D81A5D21579C460099375C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5C21579C460099375C /* Result.swift */; };
 		43D81A602157C25A0099375C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D81A5F2157C25A0099375C /* Constants.swift */; };
@@ -63,7 +66,10 @@
 		43C8D48E2168F85900ED5D07 /* ScannerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerAssembly.swift; sourceTree = "<group>"; };
 		43C8D4902168F87000ED5D07 /* ScannerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerRouter.swift; sourceTree = "<group>"; };
 		43C8D4922168F8C400ED5D07 /* Scanner.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Scanner.xib; sourceTree = "<group>"; };
-		43C8D494216902F500ED5D07 /* ChecksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecksService.swift; sourceTree = "<group>"; };
+		43C8D494216902F500ED5D07 /* CheckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckService.swift; sourceTree = "<group>"; };
+		43C8D4972169192200ED5D07 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		43C8D49921691CC900ED5D07 /* Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
+		43C8D49B21691CEC00ED5D07 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		43D81A5921579B5C0099375C /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
 		43D81A5C21579C460099375C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		43D81A5F2157C25A0099375C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -180,6 +186,7 @@
 		43BC0020214CFF7200BBAFB8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				43C8D4962169190600ED5D07 /* Utils */,
 				43699DFE215FDF84005DE5D1 /* BaseClasses */,
 				43699DFB215FD06B005DE5D1 /* UserDefaults */,
 				436A5791215D660600B4D8D9 /* Protocols */,
@@ -238,7 +245,7 @@
 			children = (
 				43D81A5B21579B7D0099375C /* Common */,
 				43D81A5921579B5C0099375C /* AuthorizationService.swift */,
-				43C8D494216902F500ED5D07 /* ChecksService.swift */,
+				43C8D494216902F500ED5D07 /* CheckService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -246,6 +253,8 @@
 		43BC0039214D00CE00BBAFB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				43C8D49921691CC900ED5D07 /* Check.swift */,
+				43C8D49B21691CEC00ED5D07 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +269,14 @@
 				43C8D4902168F87000ED5D07 /* ScannerRouter.swift */,
 			);
 			path = Scanner;
+			sourceTree = "<group>";
+		};
+		43C8D4962169190600ED5D07 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				43C8D4972169192200ED5D07 /* NetworkUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		43D81A5B21579B7D0099375C /* Common */ = {
@@ -458,10 +475,11 @@
 				437706BC214D3913009B95C5 /* PhoneNumberViewController.swift in Sources */,
 				43A94D9B214E318F00740C40 /* Router.swift in Sources */,
 				436A578A215D657700B4D8D9 /* PhoneNumberAssembly.swift in Sources */,
+				43C8D49C21691CEC00ED5D07 /* Product.swift in Sources */,
 				43699DFD215FD223005DE5D1 /* UserDefaultsManager.swift in Sources */,
 				436A578E215D65A100B4D8D9 /* CodeAssembly.swift in Sources */,
 				436A5793215D662B00B4D8D9 /* BaseRouter.swift in Sources */,
-				43C8D495216902F500ED5D07 /* ChecksService.swift in Sources */,
+				43C8D495216902F500ED5D07 /* CheckService.swift in Sources */,
 				43C8D48D2168F83F00ED5D07 /* ScannerPresenter.swift in Sources */,
 				43699E00215FDFA1005DE5D1 /* ViewController.swift in Sources */,
 				43BC000E214CFE9600BBAFB8 /* AppDelegate.swift in Sources */,
@@ -471,8 +489,10 @@
 				43FA767D215AD7AA0076BDAF /* CodeViewController.swift in Sources */,
 				43D81A5A21579B5C0099375C /* AuthorizationService.swift in Sources */,
 				436A5790215D65AC00B4D8D9 /* CodeRouter.swift in Sources */,
+				43C8D49A21691CC900ED5D07 /* Check.swift in Sources */,
 				436A578C215D658900B4D8D9 /* PhoneNumberRouter.swift in Sources */,
 				43D81A602157C25A0099375C /* Constants.swift in Sources */,
+				43C8D4982169192200ED5D07 /* NetworkUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

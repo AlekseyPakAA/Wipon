@@ -25,10 +25,15 @@ class CodePresenter {
         view?.showActivityIndicator()
         view?.hideMessage()
 
-        AuthorizationService.shared.auth(phone: phoneNumber, code: code) { result in
+        AuthorizationService.shared.auth(phone: phoneNumber, code: code) { [weak self] result in
+            guard let `self` = self else {
+                return
+            }
+
             switch result {
             case .success(let token):
                 UserDefaultsManager.shared.authorizationToken = token
+                self.router.showScannerModule()
             case .wrongCode:
                 self.view?.showMessage("Authorization code is wrong.")
             case .expiredCode:

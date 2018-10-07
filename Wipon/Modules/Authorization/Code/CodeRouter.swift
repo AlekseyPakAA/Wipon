@@ -6,5 +6,15 @@
 //  Copyright © 2018 alexey.pak. All rights reserved.
 //
 
-import Foundation
-class CodeRouter: BaseRouter { }
+import UIKit
+class CodeRouter: BaseRouter {
+
+    func showScannerModule() {
+        guard let delegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+
+        delegate.showScanner()
+    }
+
+}
